@@ -1,23 +1,24 @@
 // C02EX05.CPP
 
 #include <iostream>
-#include <locale> 
+#include <locale>    // for setlocale()
+#include <windows.h> // for SetConsoleCP()
+#include <string>    // for using std::wstring
 
 using namespace std;
 
 int main(void)
 {
-  char name[50];
+  wstring name;
 
   setlocale(LC_ALL, "Portuguese_Brazil.1252");
   SetConsoleCP(1252);
 
-  cout << "Olá.\nQual sua graça? "; 
-  // for "Hello.\nWhat is your name? "
-  cin.getline(name, 50);
+  wcout << L"Hello.\nWhat is your name? ";
+  getline(wcin, name);
 
   cout << endl;
-  cout << "Hi " << name << ", let's study." << endl;
+  wcout << L"Hi " << name << L", let's study." << endl;
   cout << endl;
 
   cout << "Press <Enter> to exit... ";

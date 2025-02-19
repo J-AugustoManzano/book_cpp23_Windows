@@ -1,7 +1,6 @@
 // C02EX12.CPP
 
 #include <iostream>
-
 using namespace std;
 
 int main(void)
