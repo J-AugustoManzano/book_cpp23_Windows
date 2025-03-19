@@ -7,8 +7,8 @@ using namespace std;
 
 int main(void)
 {
-  uint16_t n, i = 1;
-  uint16_t fact {1};
+  uint16_t n, i;
+  uint16_t fact;
   char resp {'Y'};
 
   do
