@@ -16,7 +16,7 @@ int main(void)
     cout << "Factorial of what value: "; cin >> n;
     cin.ignore(80, '\n');
 
-    fact {1}, i = 1;
+    fact = 1; i = 1;
     while (i <= n)
     {
       fact *= i;
