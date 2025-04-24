@@ -16,16 +16,16 @@ int main(void)
   pa = &a;
   pb = &b;
 
-  cout << "Value A = " << *pa << " at address " << &pa;
+  cout << "Value A = " << *pa << " at address " << pa;
   cout << "." << endl;
-  cout << "Value B = " << *pb << " at address " << &pb;
+  cout << "Value B = " << *pb << " at address " << pb;
   cout << "." << endl;
   cout << endl;
 
   if (pa > pb)
-    cout << "PA is ahead of *PB.";
+    cout << "Address A before address B.";
   else
-    cout << "PA is not ahead of *PB.";
+    cout << "Address A after address B.";
   cout << endl;
 
   cout << endl;
