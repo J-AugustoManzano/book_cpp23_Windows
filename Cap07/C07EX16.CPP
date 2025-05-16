@@ -22,7 +22,6 @@ bool cmpName(const StudentRecord &a, const StudentRecord &b) {
 int main(void)
 {
   vector<StudentRecord> students(8);
-  StudentRecord x;
   float sum_gr, sum_av, overall_avg;
 
   cout << setprecision(2) << fixed;
