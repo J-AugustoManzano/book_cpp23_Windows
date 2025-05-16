@@ -15,7 +15,8 @@ struct StudentRecord {
 };
 
 // Comparison function
-bool cmpName(const StudentRecord &a, const StudentRecord &b) {
+bool cmpName(const StudentRecord &a, const StudentRecord &b) 
+{
   return a.name < b.name;
 }
 
