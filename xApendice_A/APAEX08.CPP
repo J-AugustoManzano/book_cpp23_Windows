@@ -40,7 +40,8 @@ void age(string birthDate, int16_t &y, int16_t &m, int16_t &d)
 
     // Build string in "DD/MM/YYYY" format
     char buffer[11];
-    snprintf(buffer, sizeof(buffer), "01/%02d/%04d", prevMonth, prevYear);
+    snprintf(buffer, sizeof(buffer), "01/%02d/%04d", 
+      prevMonth, prevYear);
     std::string prevDate(buffer);
 
     d += lastDayOfMonth(prevDate);
