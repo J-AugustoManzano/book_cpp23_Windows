@@ -58,7 +58,7 @@ int main(void)
   string birthDate;
   int16_t years, months, days;
 
-  cout << "Enter birth date (DD/MM/YYYY): ";
+  cout << "Enter birth date (MM/DD/YYYY): ";
   cin >> birthDate;
   cin.ignore(80, '\n');
 
